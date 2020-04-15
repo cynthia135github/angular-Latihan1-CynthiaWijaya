@@ -1,8 +1,18 @@
-<hello name="{{ name }}"></hello>
+<!--<hello name="{{ name }}"></hello>-->
+<h1>Cynthia Wijaya - C14180135 - {{name}}</h1>
 <p>
   
-  <input [(ngModel)] = "a" type = "text"> ^
-  <input [(ngModel)] = "b" type = "text">
-  <button {click} = "klikButton()">Hitung</button>
-  <button {click} = "klikButton()">Clear</button>
+  <input [(ngModel)] = "a" type = "number"> ^
+  <input [(ngModel)] = "b" type = "number">
+  
 </p>
+
+<p><button (click) = "klikButton()">Hitung</button></p>
+<p><button (click) = "clear()">Clear</button></p>
+
+<p>{{total}}</p>
+
+
+  <div *ngFor="let cetak of output">
+    {{cetak}}
+  </div>
